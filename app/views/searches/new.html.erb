@@ -1,1 +1,7 @@
 <!-- Your form goes here! -->
+<form accept-charset="UTF-8" action="/searches" method="post">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <label for="q">Search: </label>
+  <input id="q" name="q" type="text">
+  <input type="submit" value="Search">
+</form>

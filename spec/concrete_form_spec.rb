@@ -53,9 +53,7 @@ feature 'concrete form' do
       })
 
       visit edit_concrete_path(concrete)
-
       click_button 'Update Concrete'
-
       expected_params = {
         'utf8'    => '✓',
         '_method' => 'patch',
